@@ -1,7 +1,8 @@
 # Extracción de datos al sitio web SISPLADE
 
 ## Descripción
-Este proyecto extrae información del sitio web SISPLADE, donde se encuentran los registros de ingresos y egresos de cada municipio de Oaxaca. El objetivo es obtener los ingresos municipales entre 2015 y 2021. Los datos se almacenan en un archivo CSV, en el cual cada fila representa el ingreso anual de cada municipio.
+Este proyecto extrae información del sitio web [SISPLADE](https://sisplade.oaxaca.gob.mx/sisplade/smIngresosMunicipio.aspx?idMunicipio=67)
+, donde se encuentran los registros de ingresos y egresos de cada municipio de Oaxaca. El objetivo es obtener los ingresos municipales entre 2015 y 2021. Los datos se almacenan en un archivo CSV, en el cual cada fila representa el ingreso anual de cada municipio.
 
 ## Instalación
 Clona este repositorio y crea el entorno:
@@ -23,14 +24,14 @@ pyhton scripts/main.py
 Esto generará el archivo `data/ingresos_por_municipio.csv`
 
 ## Estructura del proyecto
-A continuación se muestra la estructura del proyecto:
-
-├── README.md                       <!-- # Documentación -->
-├── data                            <!-- # Carpeta donde se guardan los datos extraídos -->  
-│   └── ingresos_por_municipio.csv  <!-- # Archivo con los datos extraídos -->
-├── environment.yml                 <!-- # Configuración de entorno -->
-└── scripts                         <!-- # Archivos de código fuente-->
-    └── scraping.py                 <!-- # Script de extracción-->
+``` bash
+├── README.md                       <- Documentación
+├── data                            <- Carpeta donde se guardan los datos extraídos
+│   └── ingresos_por_municipio.csv  <- Archivo con los datos extraídos
+├── environment.yml                 <- Configuración de entorno
+└── scripts                         <- Archivos de código fuente
+    └── scraping.py                 <- Script de extracción
+```
 
 ## Resultados
 
@@ -45,10 +46,11 @@ Los ingresos municipales extraídos incluyen:
 |----|-----------|------------|------------|------------|------------|------------|------------|------------|
 | 1  | Abejones  | 8,400,543| 8,858,575| 12,918,488| 9,267,467| 10,093,756| 10,208,254| 29,564,212|
 
-## Tecnoligías utilizadas
+## Tecnologías utilizadas
 - **Pyhton**
 - **Selenium**
 - **Beautifulsoup**
+- **webdriver-manager**
 - **mamba** (para la gestión de entornos)
 
 ## Proyecto futuro
