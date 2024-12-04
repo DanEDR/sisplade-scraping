@@ -1,0 +1,9 @@
+name: scraping_env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - selenium
+  - beautifulsoup4
+  - requests
+  - webdriver-manager
